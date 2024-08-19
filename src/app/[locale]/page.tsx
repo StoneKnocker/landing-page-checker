@@ -1,7 +1,7 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
+import FaqItem from '@/components/faq-items'
 
 export default function IndexPage({
   params: { locale },
@@ -11,6 +11,7 @@ export default function IndexPage({
   unstable_setRequestLocale(locale)
 
   const t = useTranslations('Index')
+  const tFaq = useTranslations('Faq')
   return (
     <>
       <section id="hero" className='p-16 bg-gray-100'>
@@ -45,7 +46,12 @@ export default function IndexPage({
 
       </section>
       <section id="faq" className='text-center mt-16'>
-        <h2 className='text-2xl font-bold'>Frequently Asked Questions</h2>
+        <h2 className='text-2xl font-bold mb-8'>{tFaq('title')}</h2>
+        <div className="max-w-3xl mx-auto text-left">
+          {tFaq.raw('items').map((item: { question: string; answer: string }, index: number) => (
+            <FaqItem key={index} question={item.question} answer={item.answer} />
+          ))}
+        </div>
       </section>
     </>
   )

@@ -1,5 +1,42 @@
 {
   "Index": {
     "title": "This is a modern web development starter template that integrates Next.js, Tailwind CSS, ShadcnUI, and internationalization features, designed for quickly building efficient, customizable, and multilingual front-end projects."
+  },
+  "Faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is the Landing Page Checker?",
+        "answer": "The Landing Page Checker is a tool that evaluates your landing page based on Ahrefs' on-page SEO optimization guide, providing a score and suggestions for improvement."
+      },
+      {
+        "question": "How does the Landing Page Checker work?",
+        "answer": "It analyzes various on-page SEO elements of your landing page, including title tags, meta descriptions, URL structure, content, and more, comparing them against best practices."
+      },
+      {
+        "question": "What factors are considered in the landing page score?",
+        "answer": "The score considers factors such as keyword placement, heading structure, meta tags, URL optimization, internal and external linking, image optimization, content completeness, and page loading speed."
+      },
+      {
+        "question": "How can I improve my landing page score?",
+        "answer": "Follow the recommendations provided after the analysis, which may include optimizing your title tag, improving meta descriptions, restructuring your content, or enhancing your page's loading speed."
+      },
+      {
+        "question": "Is this tool suitable for all types of websites?",
+        "answer": "While the tool is based on general on-page SEO best practices, it's particularly useful for landing pages. However, the principles can be applied to most web pages."
+      },
+      {
+        "question": "How often should I check my landing page score?",
+        "answer": "It's recommended to check your score after making significant changes to your landing page or at least quarterly to ensure your page remains optimized as SEO best practices evolve."
+      },
+      {
+        "question": "Does a high score guarantee better search engine rankings?",
+        "answer": "A high score indicates good on-page optimization, which is beneficial for SEO. However, search engine rankings depend on many factors, including off-page SEO and competition."
+      },
+      {
+        "question": "Can I use this tool to check my competitors' landing pages?",
+        "answer": "Yes, you can input any publicly accessible URL to analyze and compare your landing page against competitors' pages."
+      }
+    ]
   }
 }
