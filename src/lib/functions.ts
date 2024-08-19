@@ -326,7 +326,8 @@ export async function calculatePageScore(url: string): Promise<number> {
   // rate 20%
   const cwvScore = await calculateCWVScore(url)
 
-  return (
+  // return an integer number
+  const score = (
     attractiveHeadingScore * 0.2 +
     keywordScore * 0.2 +
     descriptionScore * 0.2 +
@@ -334,4 +335,5 @@ export async function calculatePageScore(url: string): Promise<number> {
     imageOptimizationScore * 0.1 +
     cwvScore * 0.1
   )
+  return Math.round(score);
 }

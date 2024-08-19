@@ -12,7 +12,7 @@ export const languageNames: Record<Locale, string> = {
 export type Locale = (typeof locales)[number]
 export const defaultLocale = 'en'
 // Use the default: `always`，设置为 as-needed可不显示默认路由
-export const localePrefix = 'always';
+export const localePrefix = 'as-needed';
 
 export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid
