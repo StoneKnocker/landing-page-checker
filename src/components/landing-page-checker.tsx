@@ -26,15 +26,14 @@ export default function LandingPageChecker() {
         setReasons(data.reasons)
       } catch (error) {
         console.error('Error calculating page score:', error)
-        // 可以在这里添加错误处理逻辑，比如设置一个错误状态
       }
     }
   }
 
   const getScoreColor = (score: number) => {
-    if (score > 90) return 'border-green-500 text-green-500';
-    if (score > 60) return 'border-yellow-500 text-yellow-500';
-    return 'border-red-500 text-red-500';
+    if (score > 90) return 'border-green-500 text-green-500 dark:border-green-400 dark:text-green-400';
+    if (score > 60) return 'border-yellow-500 text-yellow-500 dark:border-yellow-400 dark:text-yellow-400';
+    return 'border-red-500 text-red-500 dark:border-red-400 dark:text-red-400';
   }
 
   return (
@@ -44,13 +43,13 @@ export default function LandingPageChecker() {
           <input
             type="text"
             placeholder="Enter your landing page URL"
-            className="w-full px-4 py-2 text-gray-700 bg-white border rounded-lg focus:border-blue-500 focus:outline-none focus:ring"
+            className="w-full px-4 py-2 text-gray-700 bg-white border rounded-lg focus:border-blue-500 focus:outline-none focus:ring dark:bg-gray-800 dark:text-gray-200 dark:border-gray-600 dark:focus:border-blue-400"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
           />
           <button
             type="submit"
-            className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-400"
           >
             Check
           </button>
@@ -59,7 +58,7 @@ export default function LandingPageChecker() {
 
       {score !== null && (
         <div className="text-center mt-8">
-          <div className="text-xl font-bold mt-4 mb-4">
+          <div className="text-xl font-bold mt-4 mb-4 dark:text-gray-200">
             Your Landing Page Score
           </div>
           <div className={`inline-flex items-center justify-center w-24 h-24 rounded-full border-4 ${getScoreColor(score)}`}>
@@ -67,10 +66,10 @@ export default function LandingPageChecker() {
           </div>
           {reasons.length > 0 && (
             <div className="mt-4">
-              <h3 className="text-xl font-semibold mb-2">Areas for Improvement:</h3>
+              <h3 className="text-xl font-semibold mb-2 dark:text-gray-200">Areas for Improvement:</h3>
               <ul className="list-disc list-inside text-left max-w-xl mx-auto space-y-2">
                 {reasons.map((reason, index) => (
-                  <li key={index} className="text-gray-700">{reason}</li>
+                  <li key={index} className="text-gray-700 dark:text-gray-300">{reason}</li>
                 ))}
               </ul>
             </div>

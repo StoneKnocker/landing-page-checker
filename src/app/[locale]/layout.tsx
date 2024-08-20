@@ -8,6 +8,7 @@ import { getSiteConfig } from '@/config/site-i18n'
 import { fontSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import { SiteHeader } from '@/components/site-header'
+import { SiteFooter } from '@/components/site-footer'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { ThemeProvider } from '@/components/theme-provider'
 import { NextIntlClientProvider } from 'next-intl'
@@ -62,6 +63,7 @@ export default function RootLayout({
             <NextIntlClientProvider locale={locale}>
               <div className="flex-1">{children}</div>
             </NextIntlClientProvider>
+            <SiteFooter locale={locale} />
           </div>
           {/* <TailwindIndicator /> */}
         </ThemeProvider>
