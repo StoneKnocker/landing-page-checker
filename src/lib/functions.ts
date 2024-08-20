@@ -1,6 +1,6 @@
 import { JSDOM } from 'jsdom'
 import { removeStopwords } from 'stopword'
-import jieba from 'nodejieba'
+// import jieba from 'nodejieba'
 
 let loadTime, html, document
 
@@ -23,13 +23,13 @@ function getMostFrequentWord(): string {
   let words: string[]
 
   // Tokenize words based on language
-  if (lang.startsWith('zh')) {
-    // Chinese
-    words = jieba.cut(lowerCaseText)
-  } else {
+  // if (lang.startsWith('zh')) {
+  //   // Chinese
+  //   words = jieba.cut(lowerCaseText)
+  // } else {
     // Default to English or other languages
     words = lowerCaseText.match(/\b[\w']+\b/g) || []
-  }
+  // }
 
   // Remove stopwords and numbers
   const filteredWords = removeStopwords(words).filter(
@@ -262,20 +262,14 @@ function calculateImageOptimizationScore(): number {
  * - 是否使用https 30分
  * - 是否移动端适配 40分
  */
-async function calculateCWVScore(url: string): Promise<number> {
-  await loadPage(url)
+async function calculateCWVScore(): Promise<number> {
   let score = 0
-
-  // Check if HTTPS is used
-  if (url.startsWith('https://')) {
-    score += 30
-  }
 
   // Check load time (assuming 2 seconds or less is fast)
   if (loadTime <= 2000) {
-    score += 30
+    score += 50
   } else if (loadTime <= 4000) {
-    score += 15 // Partial score for moderate load time
+    score += 30 // Partial score for moderate load time
   }
 
   // Check mobile compatibility
@@ -284,13 +278,16 @@ async function calculateCWVScore(url: string): Promise<number> {
   const hasMediaQueries = /@media\s*\(/i.test(html)
 
   if (hasViewportMeta || hasMediaQueries) {
-    score += 40
+    score += 50
   }
 
   return Math.max(0, Math.min(score, 100)) // Ensure score is between 0 and 100
 }
 
 async function loadPage(url: string) {
+  if (!url.startsWith('http')) {
+    url = 'https://' + url
+  }
   try {
     // Fetch the webpage
     const startTime = Date.now()
@@ -308,10 +305,13 @@ async function loadPage(url: string) {
     document = dom.window.document
   } catch (error) {
     console.error('Error loading page:', error)
+    throw error
   }
 }
 
 export async function calculatePageScore(url: string): Promise<number> {
+  await loadPage(url)
+
   const keyword = getMostFrequentWord()
   // rate 20%
   const attractiveHeadingScore = calculateAttractiveTitleScore(keyword)
@@ -324,7 +324,7 @@ export async function calculatePageScore(url: string): Promise<number> {
   // rate 10%
   const imageOptimizationScore = calculateImageOptimizationScore()
   // rate 20%
-  const cwvScore = await calculateCWVScore(url)
+  const cwvScore = await calculateCWVScore()
 
   // return an integer number
   const score = (

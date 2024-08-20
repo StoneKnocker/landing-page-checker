@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import FaqItem from '@/components/faq-items'
+import LandingPageChecker from '@/components/landing-page-checker'
 
 export default function IndexPage({
   params: { locale },
@@ -12,6 +13,7 @@ export default function IndexPage({
 
   const t = useTranslations('Index')
   const tFaq = useTranslations('Faq')
+
   return (
     <>
       <section id="hero" className='p-16 bg-gray-100'>
@@ -25,26 +27,14 @@ export default function IndexPage({
         </div>
         <h1 className="text-center">
           <span className="text-5xl font-bold text-indigo-800 mb-2 block">Landing Page Checker</span>
-          <span className="text-xl">Check Your Landing Page Score Before Shipping</span>
+          <span className="text-xl">Check Your Landing Page Before Shipping</span>
         </h1>
-        <div className="max-w-xl mx-auto mt-8">
-          <div className="flex flex-col sm:flex-row gap-4">
-            <input
-              type="text"
-              placeholder="Enter your landing page URL"
-              className="w-full px-4 py-2 text-gray-700 bg-white border rounded-lg focus:border-blue-500 focus:outline-none focus:ring"
-            />
-            <button
-              className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-            >
-              Check
-            </button>
-          </div>
-        </div>
+        <LandingPageChecker />
       </section>
-      <section id="display">
 
+      <section id="display">
       </section>
+      
       <section id="faq" className='text-center mt-16'>
         <h2 className='text-2xl font-bold mb-8'>{tFaq('title')}</h2>
         <div className="max-w-3xl mx-auto text-left">

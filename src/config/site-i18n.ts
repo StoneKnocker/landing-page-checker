@@ -21,8 +21,8 @@ const siteConfigBase: Record<Locale, SiteConfig> = {
         href: "/",
       },
       {
-        title: "About",
-        href: "/about",
+        title: "Full Checklist",
+        href: "/checklist",
       },
     ],
     links: {
