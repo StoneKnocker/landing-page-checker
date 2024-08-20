@@ -4,12 +4,10 @@ import { Inter } from 'next/font/google'
 import { Locale, locales } from '@/i18n'
 import { unstable_setRequestLocale } from 'next-intl/server'
 
-import { getSiteConfig } from '@/config/site-i18n'
 import { fontSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
-import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { ThemeProvider } from '@/components/theme-provider'
 import { NextIntlClientProvider } from 'next-intl'
 
@@ -22,13 +20,12 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params: { locale },
 }: PageProps): Promise<Metadata> {
-  const siteConfig = getSiteConfig(locale)
   return {
     title: {
-      default: siteConfig.name,
-      template: `%s - ${siteConfig.name}`,
+      default: "Landing Page Checker",
+      template: `%s - Landing Page Checker`,
     },
-    description: siteConfig.description,
+    description: "",
     icons: {
       icon: '/favicon.ico',
       shortcut: '/favicon-16x16.png',

@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { getSiteConfig } from '@/config/site-i18n'
 import { buttonVariants } from '@/components/ui/button'
 import { Icons } from '@/components/icons'
 import { MainNav } from '@/components/main-nav'
@@ -45,8 +44,8 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
                 })}
               >
                 <Image 
-                  className="h-5 w-6"
-                  src="https://storage.ko-fi.com/cdn/nav-logo-stroke.png" 
+                  className="h-5 w-8"
+                  src="/ko-fi.webp" 
                   alt="Ko-fi Logo" 
                   width={24}
                   height={24}
