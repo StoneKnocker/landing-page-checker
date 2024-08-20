@@ -66,7 +66,7 @@ export default function LandingPageChecker() {
           </div>
           {reasons.length > 0 && (
             <div className="mt-4">
-              <h3 className="text-xl font-semibold mb-2 dark:text-gray-200">Areas for Improvement:</h3>
+              <p className="text-xl font-semibold my-4 dark:text-gray-200">Areas for Improvement:</p>
               <ul className="list-disc list-inside text-left max-w-xl mx-auto space-y-2">
                 {reasons.map((reason, index) => (
                   <li key={index} className="text-gray-700 dark:text-gray-300">{reason}</li>
