@@ -1,13 +1,8 @@
 import { notFound } from 'next/navigation'
 import { getRequestConfig } from 'next-intl/server'
 
-// Can be imported from a shared config
-export const locales = ['en', 'zh', 'fr']
-export const languageNames: Record<Locale, string> = {
-  en: 'English',
-  zh: '中文',
-  fr: 'français'
-}
+// languages supported
+export const locales = ['en', 'fr', 'de'] as const;
 
 export type Locale = (typeof locales)[number]
 export const defaultLocale = 'en'
