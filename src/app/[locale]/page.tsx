@@ -31,11 +31,8 @@ export default function IndexPage({
         </h1>
         <LandingPageChecker />
       </section>
-
-      <section id="display">
-      </section>
       
-      <section id="faq" className='text-center mt-16'>
+      <section id="faq" className='text-center mt-8'>
         <h2 className='text-2xl font-bold mb-8 dark:text-gray-200'>{tFaq('title')}</h2>
         <div className="max-w-3xl mx-auto text-left">
           {tFaq.raw('items').map((item: { question: string; answer: string }, index: number) => (
