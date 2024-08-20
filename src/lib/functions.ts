@@ -4,6 +4,9 @@ import { removeStopwords } from 'stopword'
 
 let loadTime, html, document
 
+// 扣分原因, 优化点
+let reasons: string[] = []
+
 /**
  * 实现一个函数, 输入的是一个网页的完整html代码
  * 统计这个网页的<body>标签下, 出现频率最高的词
@@ -65,30 +68,41 @@ function getMostFrequentWord(): string {
  */
 function calculateKeywordScore(keyword: string): number {
   let score = 0
-  const lowercaseKeyword = keyword.toLowerCase()
-
-  // Check page title (40 points)
-  const title = document.querySelector('title')
-  if (title && title.textContent?.toLowerCase().includes(lowercaseKeyword)) {
-    score += 40
-  }
-
-  // Check main heading H1 (40 points)
   const h1 = document.querySelector('h1')
-  if (h1 && h1.textContent?.toLowerCase().includes(lowercaseKeyword)) {
-    score += 40
+
+  if (!h1 || !h1.textContent) {
+    reasons.push("Missing or empty H1 tag")
+    return 0 // No h1 tag or empty h1 tag
   }
 
-  // Check subheadings H2, H3 (20 points)
-  const subheadings = document.querySelectorAll('h2, h3')
-  for (const subheading of subheadings) {
-    if (subheading.textContent?.toLowerCase().includes(lowercaseKeyword)) {
-      score += 20
-      break // Only add 20 points once for subheadings
+  const h1Text = h1.textContent.trim()
+  // console.log("h1Text:", h1Text)
+
+  // Check if heading contains keyword
+  if (h1Text.toLowerCase().includes(keyword.toLowerCase())) {
+    score += 50
+  } else {
+    if (keyword) {
+      reasons.push(`H1 tag does not contain the main keyword: "${keyword}"`)
+    } else {
+      reasons.push(`H1 tag does not contain the main keyword`)
     }
   }
 
-  return Math.min(score, 100) // Ensure the score doesn't exceed 100
+  // Check keyword density in the body
+  const bodyText = document.body.textContent
+  // console.log("bodyText:", bodyText)
+  const keywordCount = (bodyText.toLowerCase().match(new RegExp(keyword.toLowerCase(), 'g')) || []).length
+  const wordCount = bodyText.split(/\s+/).length
+  const keywordDensity = (keywordCount / wordCount) * 100
+
+  if (keywordDensity >= 2 && keywordDensity <= 5) {
+    score += 50
+  } else {
+    reasons.push(`Keyword density (${keywordDensity.toFixed(2)}%) is not optimal (2-5% recommended)`)
+  }
+
+  return Math.max(0, Math.min(score, 100)) // Ensure score is between 0 and 100
 }
 
 /**
@@ -101,22 +115,28 @@ function calculateKeywordScore(keyword: string): number {
 function calculateStructureScore(): number {
   let score = 0
 
+  // Check for presence of h2 tags
+  const h2Tags = document.querySelectorAll('h2')
+  if (h2Tags.length > 0) {
+    score += 50
+  } else {
+    reasons.push("No H2 tags found on the page")
+  }
+
+  // Check for presence of h3 tags
+  const h3Tags = document.querySelectorAll('h3')
+  if (h3Tags.length > 0) {
+    score += 20
+  } else {
+    reasons.push("No H3 tags found on the page")
+  }
+
   // Check for single H1 tag (70 points)
   const h1Tags = document.querySelectorAll('h1')
   if (h1Tags.length === 1) {
     score += 70
-  }
-
-  // Check for H2 tags (20 points)
-  const h2Tags = document.querySelectorAll('h2')
-  if (h2Tags.length > 0) {
-    score += 20
-  }
-
-  // Check for H3 and below tags (10 points)
-  const h3AndBelowTags = document.querySelectorAll('h3, h4, h5, h6')
-  if (h3AndBelowTags.length > 0) {
-    score += 10
+  } else {
+    reasons.push("More than one H1 tag found on the page")
   }
 
   return score
@@ -136,7 +156,8 @@ function calculateAttractiveTitleScore(keyword: string): number {
   const title = document.querySelector('title')
 
   if (!title || !title.textContent) {
-    return 0 // No h1 tag or empty h1 tag
+    reasons.push("Missing or empty title tag")
+    return 0 // No title tag or empty title tag
   }
 
   const headingText = title.textContent.trim()
@@ -147,11 +168,18 @@ function calculateAttractiveTitleScore(keyword: string): number {
     score += 50
   } else if (headingLength < 50 || headingLength > 70) {
     score += 40 // 50 - 10 for being outside the ideal range
+    reasons.push(`Title length (${headingLength} characters) is not optimal (50-70 characters recommended)`)
   }
 
   // Check if heading contains keyword
   if (headingText.toLowerCase().includes(keyword.toLowerCase())) {
     score += 40
+  } else {
+    if (keyword) {
+      reasons.push(`Title does not contain the main keyword: "${keyword}"`)
+    } else {
+      reasons.push(`Title does not contain the main keyword`)
+    }
   }
 
   // Check if heading contains a year
@@ -159,6 +187,8 @@ function calculateAttractiveTitleScore(keyword: string): number {
   const yearRegex = new RegExp(`\\b(${currentYear}|${currentYear + 1})\\b`)
   if (yearRegex.test(headingText)) {
     score += 10
+  } else {
+    reasons.push("Title does not include the current or next year")
   }
 
   return Math.max(0, Math.min(score, 100)) // Ensure score is between 0 and 100
@@ -180,28 +210,26 @@ function calculateDescriptionScore(keyword: string): number {
   const metaDescription = document.querySelector('meta[name="description"]')
 
   if (!metaDescription || !metaDescription.getAttribute('content')) {
-    return 0 // No description or empty description
+    reasons.push("Missing or empty meta description")
+    return 0 // No meta description or empty content
   }
 
   const descriptionText = metaDescription.getAttribute('content').trim()
   const descriptionLength = descriptionText.length
 
   // Check description length
-  if (descriptionLength <= 160) {
+  if (descriptionLength >= 120 && descriptionLength <= 160) {
     score += 50
-  } else if (descriptionLength > 170) {
-    score += 40
-  } else if (descriptionLength < 100) {
-    score += 40
-  } else if (descriptionLength < 50) {
-    score += 30
-  } else if (descriptionLength < 10) {
-    score += 20
+  } else {
+    reasons.push(`Meta description length (${descriptionLength} characters) is not optimal (120-160 characters recommended)`)
+    score += 25 // Partial score for having a description, even if not optimal length
   }
 
   // Check if description contains keyword
   if (descriptionText.toLowerCase().includes(keyword.toLowerCase())) {
     score += 50
+  } else {
+    reasons.push(`Meta description does not contain the main keyword: "${keyword}"`)
   }
 
   return Math.max(0, Math.min(score, 100)) // Ensure score is between 0 and 100
@@ -309,10 +337,13 @@ async function loadPage(url: string) {
   }
 }
 
-export async function calculatePageScore(url: string): Promise<number> {
+export async function calculatePageScore(url: string): Promise<{ score: number; reasons: string[] }> {
+  reasons = [] // Reset reasons array
+
   await loadPage(url)
 
   const keyword = getMostFrequentWord()
+  console.log("main keyword:", keyword)
   // rate 20%
   const attractiveHeadingScore = calculateAttractiveTitleScore(keyword)
   // rate 20%
@@ -327,7 +358,7 @@ export async function calculatePageScore(url: string): Promise<number> {
   const cwvScore = await calculateCWVScore()
 
   // return an integer number
-  const score = (
+  const score = Math.round(
     attractiveHeadingScore * 0.2 +
     keywordScore * 0.2 +
     descriptionScore * 0.2 +
@@ -335,5 +366,5 @@ export async function calculatePageScore(url: string): Promise<number> {
     imageOptimizationScore * 0.1 +
     cwvScore * 0.1
   )
-  return Math.round(score);
+  return { score, reasons }
 }

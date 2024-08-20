@@ -5,6 +5,7 @@ import { useState } from 'react'
 export default function LandingPageChecker() {
   const [url, setUrl] = useState('')
   const [score, setScore] = useState<number | null>(null)
+  const [reasons, setReasons] = useState<string[]>([])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -22,11 +23,18 @@ export default function LandingPageChecker() {
         }
         const data = await response.json()
         setScore(data.score)
+        setReasons(data.reasons)
       } catch (error) {
         console.error('Error calculating page score:', error)
         // 可以在这里添加错误处理逻辑，比如设置一个错误状态
       }
     }
+  }
+
+  const getScoreColor = (score: number) => {
+    if (score > 90) return 'border-green-500 text-green-500';
+    if (score > 60) return 'border-yellow-500 text-yellow-500';
+    return 'border-red-500 text-red-500';
   }
 
   return (
@@ -51,9 +59,22 @@ export default function LandingPageChecker() {
 
       {score !== null && (
         <div className="text-center mt-8">
-          <div className="text-2xl font-bold">
-            Your Landing Page Score: {score}
+          <div className="text-xl font-bold mt-4 mb-4">
+            Your Landing Page Score
           </div>
+          <div className={`inline-flex items-center justify-center w-24 h-24 rounded-full border-4 ${getScoreColor(score)}`}>
+            <span className="text-2xl font-bold">{score}</span>
+          </div>
+          {reasons.length > 0 && (
+            <div className="mt-4">
+              <h3 className="text-xl font-semibold mb-2">Areas for Improvement:</h3>
+              <ul className="list-disc list-inside text-left max-w-xl mx-auto space-y-2">
+                {reasons.map((reason, index) => (
+                  <li key={index} className="text-gray-700">{reason}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       )}
     </>
