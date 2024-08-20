@@ -10,7 +10,7 @@ interface SiteFooterProps {
 
 export function SiteFooter({ locale }: SiteFooterProps) {
   return (
-    <footer className="sticky top-0 z-40 w-full border-b bg-background">
+    <footer className="sticky top-0 z-40 w-full border-b bg-background mt-8">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center space-x-4">
           <ThemeToggle />
