@@ -12,6 +12,7 @@ import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { ThemeProvider } from '@/components/theme-provider'
 import { NextIntlClientProvider, useTranslations } from 'next-intl'
+import GoogleAnalytics from '@/components/google-analytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -69,6 +70,7 @@ export default function RootLayout({
             </NextIntlClientProvider>
             <SiteFooter locale={locale} />
           </div>
+          <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''} />
           {/* <TailwindIndicator /> */}
         </ThemeProvider>
       </body>
