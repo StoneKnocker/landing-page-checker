@@ -27,7 +27,7 @@ export default function IndexPage({
         </div>
         <h1 className="text-center">
           <span className="text-5xl font-bold text-indigo-800 mb-2 block dark:text-indigo-300">Landing Page Checker</span>
-          <span className="text-xl dark:text-gray-300">Check Your Landing Page Before Shipping</span>
+          <span className="text-xl dark:text-gray-300">{t('h1Text')}</span>
         </h1>
         <LandingPageChecker />
       </section>

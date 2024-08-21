@@ -1,4 +1,6 @@
 import React from 'react';
+import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
 interface ChecklistItem {
   category: string;
@@ -53,15 +55,21 @@ const checklistData: ChecklistItem[] = [
   },
 ];
 
-export const metadata = {
-  title: 'On-Page SEO Checklist',
-  description: 'A comprehensive checklist for optimizing your web pages for search engines. Covers content, meta tags, links, images, and advanced SEO techniques.',
-};
+export async function generateMetadata({ params: { locale } }) {
+  const t = await getTranslations({ locale, namespace: 'ChecklistPage' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
 const ChecklistPage: React.FC = () => {
+  const t = useTranslations('ChecklistPage');
+
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-6 text-center dark:text-white">On-Page SEO Checklist</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center dark:text-white">{t('h1Text')}</h1>
       <table className="w-full border-collapse border border-gray-300 dark:border-gray-700 shadow-lg">
         <thead>
           <tr className="bg-gray-800 text-white dark:bg-gray-700">

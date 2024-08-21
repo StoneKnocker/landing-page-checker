@@ -4,13 +4,14 @@ import { Inter } from 'next/font/google'
 import { Locale, locales } from '@/i18n'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import { Suspense } from 'react'
+import { getTranslations } from 'next-intl/server'
 
 import { fontSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { ThemeProvider } from '@/components/theme-provider'
-import { NextIntlClientProvider } from 'next-intl'
+import { NextIntlClientProvider, useTranslations } from 'next-intl'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,12 +22,14 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params: { locale },
 }: PageProps): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'Common' })
+
   return {
     title: {
-      default: "Landing Page Checker: Optimize Your Web Pages for SEO",
+      default: t('title'),
       template: `%s | Landing Page Checker`,
     },
-    description: "Improve your website's SEO with our Landing Page Checker. Analyze and optimize your web pages for better search engine rankings and user experience.",
+    description: t('description'),
     icons: {
       icon: '/favicon.svg',
     },
@@ -43,6 +46,7 @@ export default function RootLayout({
   params: { locale },
 }: PageProps) {
   unstable_setRequestLocale(locale)
+  const t = useTranslations('Common')
   return (
     <html lang={locale} suppressHydrationWarning>
       <head />
@@ -58,7 +62,7 @@ export default function RootLayout({
             <SiteHeader locale={locale} />
             <NextIntlClientProvider locale={locale}>
               <div className="flex-1">
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<div>{t('loading')}</div>}>
                   {children}
                 </Suspense>
               </div>
