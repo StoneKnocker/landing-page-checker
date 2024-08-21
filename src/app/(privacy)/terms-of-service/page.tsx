@@ -38,7 +38,7 @@ We reserve the right to modify or replace these Terms at any time. If a revision
 
 ## Contact Us
 
-If you have any questions about these Terms, please contact us.
+If you have any questions about these Terms, please contact support@landingpagechecker.com.
 `
 
 export default function TermsOfServicePage() {
