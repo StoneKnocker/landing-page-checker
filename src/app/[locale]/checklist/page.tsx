@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 interface ChecklistItem {
   category: string;
@@ -64,7 +64,8 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 
-const ChecklistPage: React.FC = () => {
+const ChecklistPage: React.FC<{ params: { locale: string } }> = ({ params: { locale } }) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('ChecklistPage');
 
   return (
