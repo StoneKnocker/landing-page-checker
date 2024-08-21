@@ -1,5 +1,59 @@
 {
+  "Common": {
+    "loading": "Chargement...",
+    "title": "Vérificateur de Page d'Atterrissage : Optimisez Vos Pages Web pour le SEO",
+    "description": "Améliorez le SEO de votre site web avec notre Vérificateur de Page d'Atterrissage. Analysez et optimisez vos pages web pour de meilleurs classements dans les moteurs de recherche et une meilleure expérience utilisateur."
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "checklist": "Liste de contrôle complète",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  },
   "Index": {
-    "title": "Ceci est un modèle de démarrage de développement web moderne qui intègre Next.js, Tailwind CSS, ShadcnUI et des fonctionnalités d'internationalisation, conçu pour construire rapidement des projets front-end efficaces, personnalisables et multilingues."
+    "title": "Ceci est un modèle de démarrage pour le développement web moderne qui intègre Next.js, Tailwind CSS, ShadcnUI et des fonctionnalités d'internationalisation, conçu pour construire rapidement des projets front-end efficaces, personnalisables et multilingues.",
+    "h1Text": "Vérifiez Votre Page d'Atterrissage Avant de Lancer"
+  },
+  "ChecklistPage": {
+    "title": "Liste de Contrôle SEO On-Page",
+    "description": "Une liste de contrôle complète pour optimiser vos pages web pour les moteurs de recherche. Couvre le contenu, les balises méta, les liens, les images et les techniques avancées de SEO.",
+    "h1Text": "Liste de Contrôle SEO On-Page"
+  },
+  "Faq": {
+    "title": "Questions Fréquemment Posées",
+    "items": [
+      {
+        "question": "Qu'est-ce que le Vérificateur de Page d'Atterrissage ?",
+        "answer": "Le Vérificateur de Page d'Atterrissage est un outil qui évalue votre page d'atterrissage en fonction du guide d'optimisation SEO on-page d'Ahrefs, fournissant un score et des suggestions d'amélioration."
+      },
+      {
+        "question": "Comment fonctionne le Vérificateur de Page d'Atterrissage ?",
+        "answer": "Il analyse divers éléments SEO on-page de votre page d'atterrissage, y compris les balises de titre, les descriptions méta, la structure des URL, le contenu, et plus encore, en les comparant aux meilleures pratiques."
+      },
+      {
+        "question": "Quels facteurs sont pris en compte dans le score de la page d'atterrissage ?",
+        "answer": "Le score prend en compte des facteurs tels que le placement des mots-clés, la structure des titres, les balises méta, l'optimisation des URL, les liens internes et externes, l'optimisation des images, la complétude du contenu et la vitesse de chargement de la page."
+      },
+      {
+        "question": "Comment puis-je améliorer mon score de page d'atterrissage ?",
+        "answer": "Suivez les recommandations fournies après l'analyse, qui peuvent inclure l'optimisation de votre balise de titre, l'amélioration des descriptions méta, la restructuration de votre contenu ou l'amélioration de la vitesse de chargement de votre page."
+      },
+      {
+        "question": "Cet outil est-il adapté à tous les types de sites web ?",
+        "answer": "Bien que l'outil soit basé sur des meilleures pratiques générales de SEO on-page, il est particulièrement utile pour les pages d'atterrissage. Cependant, les principes peuvent être appliqués à la plupart des pages web."
+      },
+      {
+        "question": "À quelle fréquence devrais-je vérifier mon score de page d'atterrissage ?",
+        "answer": "Il est recommandé de vérifier votre score après avoir apporté des modifications significatives à votre page d'atterrissage ou au moins trimestriellement pour s'assurer que votre page reste optimisée à mesure que les meilleures pratiques SEO évoluent."
+      },
+      {
+        "question": "Un score élevé garantit-il de meilleurs classements dans les moteurs de recherche ?",
+        "answer": "Un score élevé indique une bonne optimisation on-page, ce qui est bénéfique pour le SEO. Cependant, les classements dans les moteurs de recherche dépendent de nombreux facteurs, y compris le SEO off-page et la concurrence."
+      },
+      {
+        "question": "Puis-je utiliser cet outil pour vérifier les pages d'atterrissage de mes concurrents ?",
+        "answer": "Oui, vous pouvez entrer n'importe quelle URL accessible au public pour analyser et comparer votre page d'atterrissage avec celles de vos concurrents."
+      }
+    ]
   }
 }

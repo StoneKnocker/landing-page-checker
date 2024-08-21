@@ -4,6 +4,12 @@
     "title": "Landing Page Checker: Optimize Your Web Pages for SEO",
     "description": "Improve your website's SEO with our Landing Page Checker. Analyze and optimize your web pages for better search engine rankings and user experience."
   },
+  "Navigation": {
+    "home": "Home",
+    "checklist": "Full Checklist",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
   "Index": {
     "title": "This is a modern web development starter template that integrates Next.js, Tailwind CSS, ShadcnUI, and internationalization features, designed for quickly building efficient, customizable, and multilingual front-end projects.",
     "h1Text": "Check Your Landing Page Before Shipping"

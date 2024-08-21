@@ -3,13 +3,14 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import { Locale } from '@/i18n'
+import { useTranslations } from 'next-intl'
 
 interface MainNavProps {
   locale: Locale
 }
 
 export function MainNav({ locale }: MainNavProps) {
-
+  const t = useTranslations('Navigation');
   return (
     <div className="flex gap-6 md:gap-10">
       <nav className="flex gap-6">
@@ -22,7 +23,7 @@ export function MainNav({ locale }: MainNavProps) {
             'flex items-center text-sm font-medium ',
           )}
         >
-          Home
+          {t('home')}
         </Link>
         <Link
           href="/checklist"
@@ -30,7 +31,7 @@ export function MainNav({ locale }: MainNavProps) {
             'flex items-center text-sm font-medium ',
           )}
         >
-          Full Checklist
+          {t('checklist')}
         </Link>
       </nav>
     </div>
