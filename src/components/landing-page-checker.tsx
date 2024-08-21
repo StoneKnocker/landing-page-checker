@@ -1,15 +1,20 @@
 'use client'
 
 import { useState } from 'react'
+import Loading from '@/app/[locale]/loading'
 
 export default function LandingPageChecker() {
   const [url, setUrl] = useState('')
   const [score, setScore] = useState<number | null>(null)
   const [reasons, setReasons] = useState<string[]>([])
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (url) {
+      setIsLoading(true)
+      setScore(null)
+      setReasons([])
       try {
         const response = await fetch('/api/calculatePageScore', {
           method: 'POST',
@@ -26,6 +31,8 @@ export default function LandingPageChecker() {
         setReasons(data.reasons)
       } catch (error) {
         console.error('Error calculating page score:', error)
+      } finally {
+        setIsLoading(false)
       }
     }
   }
@@ -56,7 +63,12 @@ export default function LandingPageChecker() {
         </div>
       </form>
 
-      {score !== null && (
+      {isLoading ? (
+        <div className="mt-8">
+          <Loading />
+          <p className="text-center mt-4 text-gray-600 dark:text-gray-400">Analyzing your landing page...</p>
+        </div>
+      ) : score !== null && (
         <div className="text-center mt-8">
           <div className="text-xl font-bold mt-4 mb-4 dark:text-gray-200">
             Your Landing Page Score
