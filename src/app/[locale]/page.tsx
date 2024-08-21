@@ -7,8 +7,8 @@ import { Metadata } from 'next'
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const canonicalUrl = locale === 'en' 
-    ? 'https://landingpagechecker.org/' 
-    : `https://landingpagechecker.org/${locale}`
+    ? process.env.NEXT_PUBLIC_SITE_URL
+    : `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}`
 
   return {
     alternates: {
