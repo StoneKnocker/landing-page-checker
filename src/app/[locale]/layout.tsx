@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Locale, locales } from '@/i18n'
 import { unstable_setRequestLocale } from 'next-intl/server'
+import { Suspense } from 'react'
 
 import { fontSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
@@ -56,7 +57,11 @@ export default function RootLayout({
           <div className="relative flex min-h-screen flex-col">
             <SiteHeader locale={locale} />
             <NextIntlClientProvider locale={locale}>
-              <div className="flex-1">{children}</div>
+              <div className="flex-1">
+                <Suspense fallback={<div>Loading...</div>}>
+                  {children}
+                </Suspense>
+              </div>
             </NextIntlClientProvider>
             <SiteFooter locale={locale} />
           </div>
