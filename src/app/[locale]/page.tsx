@@ -3,6 +3,19 @@ import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import FaqItem from '@/components/faq-items'
 import LandingPageChecker from '@/components/landing-page-checker'
+import { Metadata } from 'next'
+
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const canonicalUrl = locale === 'en' 
+    ? 'https://landingpagechecker.org/' 
+    : `https://landingpagechecker.org/${locale}`
+
+  return {
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  }
+}
 
 export default function IndexPage({
   params: { locale },
