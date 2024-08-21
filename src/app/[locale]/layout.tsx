@@ -22,10 +22,10 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   return {
     title: {
-      default: "Landing Page Checker",
-      template: `%s - Landing Page Checker`,
+      default: "Landing Page Checker: Optimize Your Web Pages for SEO",
+      template: `%s | Landing Page Checker`,
     },
-    description: "",
+    description: "Improve your website's SEO with our Landing Page Checker. Analyze and optimize your web pages for better search engine rankings and user experience.",
     icons: {
       icon: '/favicon.svg',
     },
