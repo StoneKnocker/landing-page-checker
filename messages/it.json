@@ -1,0 +1,59 @@
+{
+  "Common": {
+    "loading": "Caricamento...",
+    "title": "Controllo della Landing Page: Ottimizza le tue Pagine Web per SEO",
+    "description": "Migliora il SEO del tuo sito web con il nostro Controllo della Landing Page. Analizza e ottimizza le tue pagine web per migliori posizioni nei motori di ricerca e un'esperienza utente migliore."
+  },
+  "Navigation": {
+    "home": "Home",
+    "checklist": "Checklist Completa",
+    "privacy": "Informativa sulla Privacy",
+    "terms": "Termini di Servizio"
+  },
+  "Index": {
+    "title": "Questo è un modello di avvio per lo sviluppo web moderno che integra Next.js, Tailwind CSS, ShadcnUI e funzionalità di internazionalizzazione, progettato per costruire rapidamente progetti front-end efficienti, personalizzabili e multilingue.",
+    "h1Text": "Controlla la tua Landing Page Prima di Pubblicarla"
+  },
+  "ChecklistPage": {
+    "title": "Checklist SEO On-Page",
+    "description": "Una checklist completa per ottimizzare le tue pagine web per i motori di ricerca. Copre contenuti, meta tag, link, immagini e tecniche SEO avanzate.",
+    "h1Text": "Checklist SEO On-Page"
+  },
+  "Faq": {
+    "title": "Domande Frequenti",
+    "items": [
+      {
+        "question": "Cos'è il Controllo della Landing Page?",
+        "answer": "Il Controllo della Landing Page è uno strumento che valuta la tua landing page basandosi sulla guida all'ottimizzazione SEO on-page di Ahrefs, fornendo un punteggio e suggerimenti per il miglioramento."
+      },
+      {
+        "question": "Come funziona il Controllo della Landing Page?",
+        "answer": "Analizza vari elementi SEO on-page della tua landing page, inclusi tag del titolo, meta descrizioni, struttura URL, contenuti e altro, confrontandoli con le migliori pratiche."
+      },
+      {
+        "question": "Quali fattori sono considerati nel punteggio della landing page?",
+        "answer": "Il punteggio considera fattori come la posizione delle parole chiave, la struttura dei titoli, i meta tag, l'ottimizzazione degli URL, i link interni ed esterni, l'ottimizzazione delle immagini, la completezza dei contenuti e la velocità di caricamento della pagina."
+      },
+      {
+        "question": "Come posso migliorare il punteggio della mia landing page?",
+        "answer": "Segui le raccomandazioni fornite dopo l'analisi, che possono includere l'ottimizzazione del tuo tag del titolo, il miglioramento delle meta descrizioni, la ristrutturazione dei tuoi contenuti o il miglioramento della velocità di caricamento della tua pagina."
+      },
+      {
+        "question": "Questo strumento è adatto a tutti i tipi di siti web?",
+        "answer": "Sebbene lo strumento si basi su migliori pratiche SEO on-page generali, è particolarmente utile per le landing page. Tuttavia, i principi possono essere applicati alla maggior parte delle pagine web."
+      },
+      {
+        "question": "Con quale frequenza dovrei controllare il punteggio della mia landing page?",
+        "answer": "Si consiglia di controllare il tuo punteggio dopo aver apportato modifiche significative alla tua landing page o almeno trimestralmente per garantire che la tua pagina rimanga ottimizzata man mano che le migliori pratiche SEO evolvono."
+      },
+      {
+        "question": "Un punteggio elevato garantisce migliori posizioni nei motori di ricerca?",
+        "answer": "Un punteggio elevato indica una buona ottimizzazione on-page, che è vantaggiosa per il SEO. Tuttavia, le posizioni nei motori di ricerca dipendono da molti fattori, inclusi SEO off-page e concorrenza."
+      },
+      {
+        "question": "Posso usare questo strumento per controllare le landing page dei miei concorrenti?",
+        "answer": "Sì, puoi inserire qualsiasi URL accessibile pubblicamente per analizzare e confrontare la tua landing page con quelle dei concorrenti."
+      }
+    ]
+  }
+}

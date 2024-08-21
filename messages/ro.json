@@ -1,0 +1,59 @@
+{
+  "Common": {
+    "loading": "Se încarcă...",
+    "title": "Verificator de Pagini de Destinație: Optimizează-ți Pagina Web pentru SEO",
+    "description": "Îmbunătățește SEO-ul site-ului tău cu Verificatorul de Pagini de Destinație. Analizează și optimizează-ți paginile web pentru o clasare mai bună în motoarele de căutare și o experiență mai bună pentru utilizatori."
+  },
+  "Navigation": {
+    "home": "Acasă",
+    "checklist": "Listă Completă",
+    "privacy": "Politica de Confidențialitate",
+    "terms": "Termeni de Serviciu"
+  },
+  "Index": {
+    "title": "Acesta este un șablon modern de dezvoltare web care integrează Next.js, Tailwind CSS, ShadcnUI și caracteristici de internaționalizare, conceput pentru a construi rapid proiecte front-end eficiente, personalizabile și multilingve.",
+    "h1Text": "Verifică-ți Pagina de Destinație înainte de a o Lansa"
+  },
+  "ChecklistPage": {
+    "title": "Lista de Verificare SEO On-Page",
+    "description": "O listă cuprinzătoare pentru optimizarea paginilor tale web pentru motoarele de căutare. Acoperă conținutul, etichetele meta, linkurile, imaginile și tehnicile avansate de SEO.",
+    "h1Text": "Lista de Verificare SEO On-Page"
+  },
+  "Faq": {
+    "title": "Întrebări Frecvente",
+    "items": [
+      {
+        "question": "Ce este Verificatorul de Pagini de Destinație?",
+        "answer": "Verificatorul de Pagini de Destinație este un instrument care evaluează pagina ta de destinație pe baza ghidului de optimizare SEO on-page de la Ahrefs, oferind un scor și sugestii pentru îmbunătățire."
+      },
+      {
+        "question": "Cum funcționează Verificatorul de Pagini de Destinație?",
+        "answer": "Acesta analizează diferite elemente SEO on-page ale paginii tale de destinație, inclusiv etichetele de titlu, descrierile meta, structura URL-ului, conținutul și altele, comparându-le cu cele mai bune practici."
+      },
+      {
+        "question": "Ce factori sunt considerați în scorul paginii de destinație?",
+        "answer": "Scorul ia în considerare factori precum plasarea cuvintelor cheie, structura titlurilor, etichetele meta, optimizarea URL-ului, linkurile interne și externe, optimizarea imaginilor, completitudinea conținutului și viteza de încărcare a paginii."
+      },
+      {
+        "question": "Cum pot îmbunătăți scorul paginii mele de destinație?",
+        "answer": "Urmărește recomandările oferite după analiză, care pot include optimizarea etichetei tale de titlu, îmbunătățirea descrierilor meta, restructurarea conținutului tău sau îmbunătățirea vitezei de încărcare a paginii."
+      },
+      {
+        "question": "Este acest instrument potrivit pentru toate tipurile de site-uri web?",
+        "answer": "Deși instrumentul se bazează pe cele mai bune practici generale de SEO on-page, este deosebit de util pentru paginile de destinație. Totuși, principiile pot fi aplicate la majoritatea paginilor web."
+      },
+      {
+        "question": "Cât de des ar trebui să verific scorul paginii mele de destinație?",
+        "answer": "Se recomandă să verifici scorul tău după ce ai făcut modificări semnificative la pagina ta de destinație sau cel puțin trimestrial pentru a te asigura că pagina ta rămâne optimizată pe măsură ce cele mai bune practici SEO evoluează."
+      },
+      {
+        "question": "Un scor mare garantează o clasare mai bună în motoarele de căutare?",
+        "answer": "Un scor mare indică o bună optimizare on-page, ceea ce este benefic pentru SEO. Totuși, clasarea în motoarele de căutare depinde de mulți factori, inclusiv SEO off-page și competiție."
+      },
+      {
+        "question": "Pot folosi acest instrument pentru a verifica paginile de destinație ale concurenților mei?",
+        "answer": "Da, poți introduce orice URL accesibil public pentru a analiza și compara pagina ta de destinație cu paginile concurenților."
+      }
+    ]
+  }
+}

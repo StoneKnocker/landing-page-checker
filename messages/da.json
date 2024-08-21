@@ -1,0 +1,59 @@
+{
+  "Common": {
+    "loading": "Indlæser...",
+    "title": "Landing Page Checker: Optimer dine websteder til SEO",
+    "description": "Forbedr din hjemmesides SEO med vores Landing Page Checker. Analyser og optimer dine websteder for bedre placeringer i søgemaskinerne og brugeroplevelse."
+  },
+  "Navigation": {
+    "home": "Hjem",
+    "checklist": "Fuldt Tjekliste",
+    "privacy": "Privatlivspolitik",
+    "terms": "Servicevilkår"
+  },
+  "Index": {
+    "title": "Dette er en moderne webudviklingsstartskabelon, der integrerer Next.js, Tailwind CSS, ShadcnUI og internationaliseringsfunktioner, designet til hurtigt at bygge effektive, tilpassede og flersprogede front-end projekter.",
+    "h1Text": "Tjek din landing page før afsendelse"
+  },
+  "ChecklistPage": {
+    "title": "On-Page SEO Tjekliste",
+    "description": "En omfattende tjekliste til optimering af dine websteder til søgemaskiner. Dækker indhold, meta-tags, links, billeder og avancerede SEO-teknikker.",
+    "h1Text": "On-Page SEO Tjekliste"
+  },
+  "Faq": {
+    "title": "Ofte Stillede Spørgsmål",
+    "items": [
+      {
+        "question": "Hvad er Landing Page Checker?",
+        "answer": "Landing Page Checker er et værktøj, der vurderer din landing page baseret på Ahrefs' on-page SEO optimeringsguide, og giver en score og forslag til forbedringer."
+      },
+      {
+        "question": "Hvordan fungerer Landing Page Checker?",
+        "answer": "Det analyserer forskellige on-page SEO-elementer på din landing page, herunder titel-tags, meta-beskrivelser, URL-struktur, indhold og mere, og sammenligner dem med bedste praksis."
+      },
+      {
+        "question": "Hvilke faktorer tages der hensyn til i landing page scoren?",
+        "answer": "Scoren tager hensyn til faktorer som nøgleordsplacering, overskriftsstruktur, meta-tags, URL-optimering, intern og ekstern linking, billedoptimering, indholdets fuldstændighed og sideindlæsningshastighed."
+      },
+      {
+        "question": "Hvordan kan jeg forbedre min landing page score?",
+        "answer": "Følg anbefalingerne givet efter analysen, som kan inkludere optimering af dit titel-tag, forbedring af meta-beskrivelser, omstrukturering af dit indhold eller forbedring af din sides indlæsningshastighed."
+      },
+      {
+        "question": "Er dette værktøj egnet til alle typer hjemmesider?",
+        "answer": "Selvom værktøjet er baseret på generelle on-page SEO bedste praksis, er det særligt nyttigt til landing pages. Dog kan principperne anvendes på de fleste websteder."
+      },
+      {
+        "question": "Hvor ofte skal jeg tjekke min landing page score?",
+        "answer": "Det anbefales at tjekke din score efter at have foretaget betydelige ændringer på din landing page eller mindst kvartalsvis for at sikre, at din side forbliver optimeret, efterhånden som SEO bedste praksis udvikler sig."
+      },
+      {
+        "question": "Garanterer en høj score bedre placeringer i søgemaskinerne?",
+        "answer": "En høj score indikerer god on-page optimering, hvilket er gavnligt for SEO. Dog afhænger placeringer i søgemaskinerne af mange faktorer, herunder off-page SEO og konkurrence."
+      },
+      {
+        "question": "Kan jeg bruge dette værktøj til at tjekke mine konkurrenters landing pages?",
+        "answer": "Ja, du kan indtaste enhver offentligt tilgængelig URL for at analysere og sammenligne din landing page med konkurrenternes sider."
+      }
+    ]
+  }
+}

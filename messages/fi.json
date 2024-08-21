@@ -1,0 +1,59 @@
+{
+  "Common": {
+    "loading": "Ladataan...",
+    "title": "Laskeutumissivun tarkistaja: Optimoi verkkosivusi SEO:ta varten",
+    "description": "Paranna verkkosivustosi SEO:ta Laskeutumissivun tarkistajamme avulla. Analysoi ja optimoi verkkosivusi parempia hakukonesijoituksia ja käyttäjäkokemusta varten."
+  },
+  "Navigation": {
+    "home": "Koti",
+    "checklist": "Kattava tarkistuslista",
+    "privacy": "Tietosuojakäytäntö",
+    "terms": "Käyttöehdot"
+  },
+  "Index": {
+    "title": "Tämä on moderni verkkokehityksen aloitusmalli, joka yhdistää Next.js:n, Tailwind CSS:n, ShadcnUI:n ja kansainvälistämisominaisuudet, suunniteltu tehokkaiden, muokattavien ja monikielisten etupään projektien nopeaan rakentamiseen.",
+    "h1Text": "Tarkista laskeutumissivusi ennen julkaisemista"
+  },
+  "ChecklistPage": {
+    "title": "Sivun SEO-tarkistuslista",
+    "description": "Kattava tarkistuslista verkkosivujesi optimointiin hakukoneita varten. Kattaa sisällön, meta-tunnisteet, linkit, kuvat ja edistyneet SEO-tekniikat.",
+    "h1Text": "Sivun SEO-tarkistuslista"
+  },
+  "Faq": {
+    "title": "Usein kysytyt kysymykset",
+    "items": [
+      {
+        "question": "Mikä on Laskeutumissivun tarkistaja?",
+        "answer": "Laskeutumissivun tarkistaja on työkalu, joka arvioi laskeutumissivusi Ahrefs'in sivun SEO-optimointiohjeen perusteella, antaen pisteen ja parannusehdotuksia."
+      },
+      {
+        "question": "Miten Laskeutumissivun tarkistaja toimii?",
+        "answer": "Se analysoi erilaisia sivun SEO-elementtejä laskeutumissivullasi, mukaan lukien otsikkotunnisteet, meta-kuvaukset, URL-rakenne, sisältö ja paljon muuta, vertaamalla niitä parhaisiin käytäntöihin."
+      },
+      {
+        "question": "Mitä tekijöitä otetaan huomioon laskeutumissivun pisteessä?",
+        "answer": "Pisteessä otetaan huomioon tekijät, kuten avainsanojen sijoittelu, otsikkorakenne, meta-tunnisteet, URL-optimointi, sisäiset ja ulkoiset linkit, kuvien optimointi, sisällön täydellisyys ja sivun latausnopeus."
+      },
+      {
+        "question": "Miten voin parantaa laskeutumissivuni pistettä?",
+        "answer": "Seuraa analyysin jälkeen annettuja suosituksia, jotka voivat sisältää otsikkotunnisteesi optimoinnin, meta-kuvausten parantamisen, sisällön uudelleenrakentamisen tai sivusi latausnopeuden parantamisen."
+      },
+      {
+        "question": "Onko tämä työkalu sopiva kaikentyyppisille verkkosivustoille?",
+        "answer": "Vaikka työkalu perustuu yleisiin sivun SEO:n parhaita käytäntöihin, se on erityisen hyödyllinen laskeutumissivuille. Kuitenkin periaatteita voidaan soveltaa useimpiin verkkosivuihin."
+      },
+      {
+        "question": "Kuinka usein minun pitäisi tarkistaa laskeutumissivuni pistettä?",
+        "answer": "On suositeltavaa tarkistaa pisteesi merkittävien muutosten jälkeen laskeutumissivullasi tai vähintään neljännesvuosittain varmistaaksesi, että sivusi pysyy optimoituna SEO:n parhaiden käytäntöjen kehittyessä."
+      },
+      {
+        "question": "Takaa korkea pistemäärä paremmat hakukonesijoitukset?",
+        "answer": "Korkea pistemäärä osoittaa hyvää sivun optimointia, mikä on hyödyllistä SEO:lle. Kuitenkin hakukonesijoitukset riippuvat monista tekijöistä, mukaan lukien off-page SEO ja kilpailu."
+      },
+      {
+        "question": "Voinko käyttää tätä työkalua kilpailijoideni laskeutumissivujen tarkistamiseen?",
+        "answer": "Kyllä, voit syöttää minkä tahansa julkisesti saatavilla olevan URL-osoitteen analysoidaksesi ja vertaillaksesi laskeutumissivusi kilpailijoiden sivuihin."
+      }
+    ]
+  }
+}

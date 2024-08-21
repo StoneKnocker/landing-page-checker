@@ -1,0 +1,59 @@
+{
+  "Common": {
+    "loading": "Laster...",
+    "title": "Landingssidekontroller: Optimaliser dine nettsider for SEO",
+    "description": "Forbedre SEO-en til nettstedet ditt med vår Landingssidekontroller. Analyser og optimaliser nettsidene dine for bedre rangeringer i søkemotorer og brukeropplevelse."
+  },
+  "Navigation": {
+    "home": "Hjem",
+    "checklist": "Full sjekkliste",
+    "privacy": "Personvernerklæring",
+    "terms": "Vilkår for bruk"
+  },
+  "Index": {
+    "title": "Dette er en moderne mal for webutvikling som integrerer Next.js, Tailwind CSS, ShadcnUI og internasjonaliseringsfunksjoner, designet for raskt å bygge effektive, tilpassbare og flerspråklige front-end prosjekter.",
+    "h1Text": "Sjekk din landingsside før du lanserer"
+  },
+  "ChecklistPage": {
+    "title": "On-Page SEO Sjekkliste",
+    "description": "En omfattende sjekkliste for å optimalisere nettsidene dine for søkemotorer. Dekker innhold, metatagger, lenker, bilder og avanserte SEO-teknikker.",
+    "h1Text": "On-Page SEO Sjekkliste"
+  },
+  "Faq": {
+    "title": "Ofte stilte spørsmål",
+    "items": [
+      {
+        "question": "Hva er Landingssidekontrolleren?",
+        "answer": "Landingssidekontrolleren er et verktøy som vurderer landingssiden din basert på Ahrefs' retningslinjer for on-page SEO-optimalisering, og gir en poengsum og forslag til forbedringer."
+      },
+      {
+        "question": "Hvordan fungerer Landingssidekontrolleren?",
+        "answer": "Den analyserer ulike on-page SEO-elementer på landingssiden din, inkludert tittel-tagger, metabeskrivelser, URL-struktur, innhold og mer, og sammenligner dem med beste praksis."
+      },
+      {
+        "question": "Hvilke faktorer vurderes i landingssidepoengsummen?",
+        "answer": "Poengsummen vurderer faktorer som nøkkelordplassering, overskriftsstruktur, metatagger, URL-optimalisering, intern og ekstern lenking, bildeoptimalisering, innholdets fullstendighet og sideinnlastingshastighet."
+      },
+      {
+        "question": "Hvordan kan jeg forbedre poengsummen min for landingssiden?",
+        "answer": "Følg anbefalingene som gis etter analysen, som kan inkludere optimalisering av tittel-tagg, forbedring av metabeskrivelser, omstrukturering av innholdet ditt, eller forbedring av innlastingshastigheten til siden din."
+      },
+      {
+        "question": "Er dette verktøyet egnet for alle typer nettsteder?",
+        "answer": "Selv om verktøyet er basert på generelle beste praksiser for on-page SEO, er det spesielt nyttig for landingssider. Imidlertid kan prinsippene brukes på de fleste nettsider."
+      },
+      {
+        "question": "Hvor ofte bør jeg sjekke poengsummen min for landingssiden?",
+        "answer": "Det anbefales å sjekke poengsummen din etter å ha gjort betydelige endringer på landingssiden din, eller minst kvartalsvis for å sikre at siden din forblir optimalisert etter hvert som beste praksis for SEO utvikler seg."
+      },
+      {
+        "question": "Garanti for bedre rangeringer i søkemotorer med høy poengsum?",
+        "answer": "En høy poengsum indikerer god on-page optimalisering, noe som er gunstig for SEO. Imidlertid avhenger rangeringene i søkemotorer av mange faktorer, inkludert off-page SEO og konkurranse."
+      },
+      {
+        "question": "Kan jeg bruke dette verktøyet til å sjekke konkurrentenes landingssider?",
+        "answer": "Ja, du kan skrive inn hvilken som helst offentlig tilgjengelig URL for å analysere og sammenligne landingssiden din med konkurrentenes sider."
+      }
+    ]
+  }
+}

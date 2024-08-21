@@ -1,0 +1,59 @@
+{
+  "Common": {
+    "loading": "Carregando...",
+    "title": "Verificador de Página de Destino: Otimize Suas Páginas da Web para SEO",
+    "description": "Melhore o SEO do seu site com nosso Verificador de Página de Destino. Analise e otimize suas páginas da web para melhores classificações em mecanismos de busca e experiência do usuário."
+  },
+  "Navigation": {
+    "home": "Início",
+    "checklist": "Lista de Verificação Completa",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço"
+  },
+  "Index": {
+    "title": "Este é um modelo de início de desenvolvimento web moderno que integra Next.js, Tailwind CSS, ShadcnUI e recursos de internacionalização, projetado para construir rapidamente projetos front-end eficientes, personalizáveis e multilíngues.",
+    "h1Text": "Verifique Sua Página de Destino Antes de Enviar"
+  },
+  "ChecklistPage": {
+    "title": "Lista de Verificação de SEO On-Page",
+    "description": "Uma lista de verificação abrangente para otimizar suas páginas da web para mecanismos de busca. Abrange conteúdo, meta tags, links, imagens e técnicas avançadas de SEO.",
+    "h1Text": "Lista de Verificação de SEO On-Page"
+  },
+  "Faq": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      {
+        "question": "O que é o Verificador de Página de Destino?",
+        "answer": "O Verificador de Página de Destino é uma ferramenta que avalia sua página de destino com base no guia de otimização de SEO on-page da Ahrefs, fornecendo uma pontuação e sugestões para melhorias."
+      },
+      {
+        "question": "Como funciona o Verificador de Página de Destino?",
+        "answer": "Ele analisa vários elementos de SEO on-page da sua página de destino, incluindo tags de título, meta descrições, estrutura de URL, conteúdo e mais, comparando-os com as melhores práticas."
+      },
+      {
+        "question": "Quais fatores são considerados na pontuação da página de destino?",
+        "answer": "A pontuação considera fatores como posicionamento de palavras-chave, estrutura de cabeçalhos, meta tags, otimização de URL, links internos e externos, otimização de imagens, completude do conteúdo e velocidade de carregamento da página."
+      },
+      {
+        "question": "Como posso melhorar minha pontuação de página de destino?",
+        "answer": "Siga as recomendações fornecidas após a análise, que podem incluir otimizar sua tag de título, melhorar as meta descrições, reestruturar seu conteúdo ou aumentar a velocidade de carregamento da sua página."
+      },
+      {
+        "question": "Esta ferramenta é adequada para todos os tipos de sites?",
+        "answer": "Embora a ferramenta seja baseada em melhores práticas gerais de SEO on-page, ela é particularmente útil para páginas de destino. No entanto, os princípios podem ser aplicados à maioria das páginas da web."
+      },
+      {
+        "question": "Com que frequência devo verificar minha pontuação de página de destino?",
+        "answer": "Recomenda-se verificar sua pontuação após fazer alterações significativas em sua página de destino ou pelo menos trimestralmente para garantir que sua página permaneça otimizada à medida que as melhores práticas de SEO evoluem."
+      },
+      {
+        "question": "Uma pontuação alta garante melhores classificações em mecanismos de busca?",
+        "answer": "Uma pontuação alta indica boa otimização on-page, o que é benéfico para SEO. No entanto, as classificações em mecanismos de busca dependem de muitos fatores, incluindo SEO off-page e concorrência."
+      },
+      {
+        "question": "Posso usar esta ferramenta para verificar as páginas de destino dos meus concorrentes?",
+        "answer": "Sim, você pode inserir qualquer URL acessível publicamente para analisar e comparar sua página de destino com as páginas dos concorrentes."
+      }
+    ]
+  }
+}

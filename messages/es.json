@@ -1,0 +1,59 @@
+{
+  "Common": {
+    "loading": "Cargando...",
+    "title": "Verificador de Página de Aterrizaje: Optimiza Tus Páginas Web para SEO",
+    "description": "Mejora el SEO de tu sitio web con nuestro Verificador de Página de Aterrizaje. Analiza y optimiza tus páginas web para obtener mejores posiciones en los motores de búsqueda y una mejor experiencia de usuario."
+  },
+  "Navigation": {
+    "home": "Inicio",
+    "checklist": "Lista de Verificación Completa",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  },
+  "Index": {
+    "title": "Este es un template moderno para el desarrollo web que integra Next.js, Tailwind CSS, ShadcnUI y características de internacionalización, diseñado para construir rápidamente proyectos front-end eficientes, personalizables y multilingües.",
+    "h1Text": "Verifica Tu Página de Aterrizaje Antes de Publicar"
+  },
+  "ChecklistPage": {
+    "title": "Lista de Verificación de SEO en la Página",
+    "description": "Una lista de verificación completa para optimizar tus páginas web para los motores de búsqueda. Cubre contenido, meta etiquetas, enlaces, imágenes y técnicas avanzadas de SEO.",
+    "h1Text": "Lista de Verificación de SEO en la Página"
+  },
+  "Faq": {
+    "title": "Preguntas Frecuentes",
+    "items": [
+      {
+        "question": "¿Qué es el Verificador de Página de Aterrizaje?",
+        "answer": "El Verificador de Página de Aterrizaje es una herramienta que evalúa tu página de aterrizaje según la guía de optimización SEO en la página de Ahrefs, proporcionando una puntuación y sugerencias para mejorar."
+      },
+      {
+        "question": "¿Cómo funciona el Verificador de Página de Aterrizaje?",
+        "answer": "Analiza varios elementos de SEO en la página de tu página de aterrizaje, incluyendo etiquetas de título, descripciones meta, estructura de URL, contenido y más, comparándolos con las mejores prácticas."
+      },
+      {
+        "question": "¿Qué factores se consideran en la puntuación de la página de aterrizaje?",
+        "answer": "La puntuación considera factores como la colocación de palabras clave, la estructura de encabezados, las meta etiquetas, la optimización de URL, enlaces internos y externos, optimización de imágenes, completitud del contenido y velocidad de carga de la página."
+      },
+      {
+        "question": "¿Cómo puedo mejorar mi puntuación de página de aterrizaje?",
+        "answer": "Sigue las recomendaciones proporcionadas después del análisis, que pueden incluir optimizar tu etiqueta de título, mejorar las descripciones meta, reestructurar tu contenido o mejorar la velocidad de carga de tu página."
+      },
+      {
+        "question": "¿Es esta herramienta adecuada para todo tipo de sitios web?",
+        "answer": "Aunque la herramienta se basa en las mejores prácticas generales de SEO en la página, es particularmente útil para páginas de aterrizaje. Sin embargo, los principios se pueden aplicar a la mayoría de las páginas web."
+      },
+      {
+        "question": "¿Con qué frecuencia debo verificar la puntuación de mi página de aterrizaje?",
+        "answer": "Se recomienda verificar tu puntuación después de realizar cambios significativos en tu página de aterrizaje o al menos trimestralmente para asegurarte de que tu página siga optimizada a medida que evolucionan las mejores prácticas de SEO."
+      },
+      {
+        "question": "¿Una puntuación alta garantiza mejores posiciones en los motores de búsqueda?",
+        "answer": "Una puntuación alta indica una buena optimización en la página, lo cual es beneficioso para el SEO. Sin embargo, las posiciones en los motores de búsqueda dependen de muchos factores, incluyendo SEO fuera de la página y competencia."
+      },
+      {
+        "question": "¿Puedo usar esta herramienta para verificar las páginas de aterrizaje de mis competidores?",
+        "answer": "Sí, puedes ingresar cualquier URL accesible públicamente para analizar y comparar tu página de aterrizaje con las páginas de los competidores."
+      }
+    ]
+  }
+}

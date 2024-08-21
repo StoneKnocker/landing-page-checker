@@ -1,0 +1,59 @@
+{
+  "Common": {
+    "loading": "Laden...",
+    "title": "Landing Page Checker: Optimieren Sie Ihre Webseiten für SEO",
+    "description": "Verbessern Sie die SEO Ihrer Website mit unserem Landing Page Checker. Analysieren und optimieren Sie Ihre Webseiten für bessere Suchmaschinen-Rankings und Benutzererfahrung."
+  },
+  "Navigation": {
+    "home": "Startseite",
+    "checklist": "Vollständige Checkliste",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen"
+  },
+  "Index": {
+    "title": "Dies ist eine moderne Vorlage für die Webentwicklung, die Next.js, Tailwind CSS, ShadcnUI und Internationalisierungsfunktionen integriert und für den schnellen Aufbau effizienter, anpassbarer und mehrsprachiger Front-End-Projekte konzipiert ist.",
+    "h1Text": "Überprüfen Sie Ihre Landing Page vor dem Versand"
+  },
+  "ChecklistPage": {
+    "title": "On-Page SEO Checkliste",
+    "description": "Eine umfassende Checkliste zur Optimierung Ihrer Webseiten für Suchmaschinen. Behandelt Inhalte, Meta-Tags, Links, Bilder und fortgeschrittene SEO-Techniken.",
+    "h1Text": "On-Page SEO Checkliste"
+  },
+  "Faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Was ist der Landing Page Checker?",
+        "answer": "Der Landing Page Checker ist ein Tool, das Ihre Landing Page basierend auf dem On-Page-SEO-Optimierungsleitfaden von Ahrefs bewertet und eine Punktzahl sowie Verbesserungsvorschläge bietet."
+      },
+      {
+        "question": "Wie funktioniert der Landing Page Checker?",
+        "answer": "Es analysiert verschiedene On-Page-SEO-Elemente Ihrer Landing Page, einschließlich Titel-Tags, Meta-Beschreibungen, URL-Struktur, Inhalte und mehr, und vergleicht sie mit den besten Praktiken."
+      },
+      {
+        "question": "Welche Faktoren werden in die Punktzahl der Landing Page einbezogen?",
+        "answer": "Die Punktzahl berücksichtigt Faktoren wie Keyword-Platzierung, Überschriftenstruktur, Meta-Tags, URL-Optimierung, interne und externe Verlinkung, Bildoptimierung, Vollständigkeit des Inhalts und Ladegeschwindigkeit der Seite."
+      },
+      {
+        "question": "Wie kann ich meine Punktzahl für die Landing Page verbessern?",
+        "answer": "Befolgen Sie die Empfehlungen, die nach der Analyse bereitgestellt werden, die die Optimierung Ihres Titel-Tags, die Verbesserung der Meta-Beschreibungen, die Umstrukturierung Ihrer Inhalte oder die Verbesserung der Ladegeschwindigkeit Ihrer Seite umfassen können."
+      },
+      {
+        "question": "Ist dieses Tool für alle Arten von Websites geeignet?",
+        "answer": "Obwohl das Tool auf allgemeinen besten Praktiken für On-Page-SEO basiert, ist es besonders nützlich für Landing Pages. Die Prinzipien können jedoch auf die meisten Webseiten angewendet werden."
+      },
+      {
+        "question": "Wie oft sollte ich meine Punktzahl für die Landing Page überprüfen?",
+        "answer": "Es wird empfohlen, Ihre Punktzahl nach wesentlichen Änderungen an Ihrer Landing Page oder mindestens vierteljährlich zu überprüfen, um sicherzustellen, dass Ihre Seite optimiert bleibt, während sich die besten Praktiken für SEO weiterentwickeln."
+      },
+      {
+        "question": "Garantiert eine hohe Punktzahl bessere Suchmaschinen-Rankings?",
+        "answer": "Eine hohe Punktzahl zeigt eine gute On-Page-Optimierung an, die für SEO vorteilhaft ist. Die Suchmaschinen-Rankings hängen jedoch von vielen Faktoren ab, einschließlich Off-Page-SEO und Wettbewerb."
+      },
+      {
+        "question": "Kann ich dieses Tool verwenden, um die Landing Pages meiner Wettbewerber zu überprüfen?",
+        "answer": "Ja, Sie können jede öffentlich zugängliche URL eingeben, um Ihre Landing Page mit den Seiten Ihrer Wettbewerber zu analysieren und zu vergleichen."
+      }
+    ]
+  }
+}

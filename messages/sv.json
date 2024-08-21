@@ -1,0 +1,59 @@
+{
+  "Common": {
+    "loading": "Laddar...",
+    "title": "Landningssida Kontroll: Optimera Dina Webbplatser för SEO",
+    "description": "Förbättra din webbplats SEO med vår Landningssida Kontroll. Analysera och optimera dina webbplatser för bättre sökmotorrankningar och användarupplevelse."
+  },
+  "Navigation": {
+    "home": "Hem",
+    "checklist": "Fullständig Checklista",
+    "privacy": "Integritetspolicy",
+    "terms": "Användarvillkor"
+  },
+  "Index": {
+    "title": "Detta är en modern webb utvecklingsstartmall som integrerar Next.js, Tailwind CSS, ShadcnUI och internationella funktioner, utformad för att snabbt bygga effektiva, anpassningsbara och flerspråkiga front-end projekt.",
+    "h1Text": "Kontrollera Din Landningssida Innan Du Publicerar"
+  },
+  "ChecklistPage": {
+    "title": "On-Page SEO Checklista",
+    "description": "En omfattande checklista för att optimera dina webbplatser för sökmotorer. Täcker innehåll, metataggar, länkar, bilder och avancerade SEO-tekniker.",
+    "h1Text": "On-Page SEO Checklista"
+  },
+  "Faq": {
+    "title": "Vanliga Frågor",
+    "items": [
+      {
+        "question": "Vad är Landningssida Kontroll?",
+        "answer": "Landningssida Kontroll är ett verktyg som utvärderar din landningssida baserat på Ahrefs' on-page SEO optimeringsguide, och ger en poäng och förslag på förbättringar."
+      },
+      {
+        "question": "Hur fungerar Landningssida Kontroll?",
+        "answer": "Det analyserar olika on-page SEO-element på din landningssida, inklusive titeltaggar, metabeskrivningar, URL-struktur, innehåll och mer, och jämför dem med bästa praxis."
+      },
+      {
+        "question": "Vilka faktorer beaktas i landningssida poängen?",
+        "answer": "Poängen beaktar faktorer som nyckelordsplacering, rubrikstruktur, metataggar, URL-optimering, intern och extern länkning, bildoptimering, innehållsfullständighet och sidladdningshastighet."
+      },
+      {
+        "question": "Hur kan jag förbättra min landningssida poäng?",
+        "answer": "Följ rekommendationerna som ges efter analysen, vilket kan inkludera att optimera din titeltagg, förbättra metabeskrivningar, omstrukturera ditt innehåll eller förbättra sidans laddningshastighet."
+      },
+      {
+        "question": "Är detta verktyg lämpligt för alla typer av webbplatser?",
+        "answer": "Även om verktyget baseras på allmänna on-page SEO bästa praxis, är det särskilt användbart för landningssidor. Principerna kan dock tillämpas på de flesta webbplatser."
+      },
+      {
+        "question": "Hur ofta bör jag kontrollera min landningssida poäng?",
+        "answer": "Det rekommenderas att kontrollera din poäng efter att ha gjort betydande ändringar på din landningssida eller åtminstone kvartalsvis för att säkerställa att din sida förblir optimerad i takt med att SEO bästa praxis utvecklas."
+      },
+      {
+        "question": "Garantiar en hög poäng bättre sökmotorrankningar?",
+        "answer": "En hög poäng indikerar god on-page optimering, vilket är fördelaktigt för SEO. Men sökmotorrankningar beror på många faktorer, inklusive off-page SEO och konkurrens."
+      },
+      {
+        "question": "Kan jag använda detta verktyg för att kontrollera mina konkurrenters landningssidor?",
+        "answer": "Ja, du kan ange vilken offentligt tillgänglig URL som helst för att analysera och jämföra din landningssida med konkurrenters sidor."
+      }
+    ]
+  }
+}

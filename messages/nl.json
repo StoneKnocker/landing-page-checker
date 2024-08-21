@@ -1,0 +1,59 @@
+{
+  "Common": {
+    "loading": "Laden...",
+    "title": "Landing Page Checker: Optimaliseer uw webpagina's voor SEO",
+    "description": "Verbeter de SEO van uw website met onze Landing Page Checker. Analyseer en optimaliseer uw webpagina's voor betere zoekmachine rankings en gebruikerservaring."
+  },
+  "Navigation": {
+    "home": "Home",
+    "checklist": "Volledige Checklist",
+    "privacy": "Privacybeleid",
+    "terms": "Servicevoorwaarden"
+  },
+  "Index": {
+    "title": "Dit is een modern webontwikkelingsstartertemplate dat Next.js, Tailwind CSS, ShadcnUI en internationalisatie functies integreert, ontworpen voor het snel bouwen van efficiënte, aanpasbare en meertalige front-end projecten.",
+    "h1Text": "Controleer uw landingspagina voordat u deze verzendt"
+  },
+  "ChecklistPage": {
+    "title": "On-Page SEO Checklist",
+    "description": "Een uitgebreide checklist voor het optimaliseren van uw webpagina's voor zoekmachines. Behandelt inhoud, meta-tags, links, afbeeldingen en geavanceerde SEO-technieken.",
+    "h1Text": "On-Page SEO Checklist"
+  },
+  "Faq": {
+    "title": "Veelgestelde Vragen",
+    "items": [
+      {
+        "question": "Wat is de Landing Page Checker?",
+        "answer": "De Landing Page Checker is een tool die uw landingspagina evalueert op basis van de on-page SEO optimalisatiegids van Ahrefs, en een score en suggesties voor verbetering biedt."
+      },
+      {
+        "question": "Hoe werkt de Landing Page Checker?",
+        "answer": "Het analyseert verschillende on-page SEO-elementen van uw landingspagina, waaronder titel-tags, meta-beschrijvingen, URL-structuur, inhoud en meer, en vergelijkt deze met best practices."
+      },
+      {
+        "question": "Welke factoren worden in de score van de landingspagina overwogen?",
+        "answer": "De score houdt rekening met factoren zoals zoekwoordplaatsing, kopstructuur, meta-tags, URL-optimalisatie, interne en externe links, afbeeldingsoptimalisatie, volledigheid van de inhoud en laadsnelheid van de pagina."
+      },
+      {
+        "question": "Hoe kan ik mijn score voor de landingspagina verbeteren?",
+        "answer": "Volg de aanbevelingen die na de analyse worden gegeven, die kunnen inhouden dat u uw titel-tag optimaliseert, meta-beschrijvingen verbetert, uw inhoud herstructureert of de laadsnelheid van uw pagina verbetert."
+      },
+      {
+        "question": "Is deze tool geschikt voor alle soorten websites?",
+        "answer": "Hoewel de tool is gebaseerd op algemene on-page SEO best practices, is het bijzonder nuttig voor landingspagina's. De principes kunnen echter op de meeste webpagina's worden toegepast."
+      },
+      {
+        "question": "Hoe vaak moet ik mijn score voor de landingspagina controleren?",
+        "answer": "Het wordt aanbevolen om uw score te controleren na het aanbrengen van significante wijzigingen aan uw landingspagina of minstens elk kwartaal om ervoor te zorgen dat uw pagina geoptimaliseerd blijft naarmate de SEO best practices evolueren."
+      },
+      {
+        "question": "Garandeert een hoge score betere zoekmachine rankings?",
+        "answer": "Een hoge score duidt op goede on-page optimalisatie, wat gunstig is voor SEO. Zoekmachine rankings zijn echter afhankelijk van veel factoren, waaronder off-page SEO en concurrentie."
+      },
+      {
+        "question": "Kan ik deze tool gebruiken om de landingspagina's van mijn concurrenten te controleren?",
+        "answer": "Ja, u kunt elke openbaar toegankelijke URL invoeren om uw landingspagina te analyseren en te vergelijken met de pagina's van concurrenten."
+      }
+    ]
+  }
+}

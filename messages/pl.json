@@ -1,0 +1,59 @@
+{
+  "Common": {
+    "loading": "Ładowanie...",
+    "title": "Sprawdzacz Stron Docelowych: Optymalizuj Swoje Strony Internetowe pod kątem SEO",
+    "description": "Popraw SEO swojej strony internetowej za pomocą naszego Sprawdzacza Stron Docelowych. Analizuj i optymalizuj swoje strony internetowe, aby uzyskać lepsze pozycje w wyszukiwarkach i lepsze doświadczenia użytkowników."
+  },
+  "Navigation": {
+    "home": "Strona główna",
+    "checklist": "Pełna lista kontrolna",
+    "privacy": "Polityka prywatności",
+    "terms": "Warunki korzystania z usługi"
+  },
+  "Index": {
+    "title": "To nowoczesny szablon do rozwoju stron internetowych, który integruje Next.js, Tailwind CSS, ShadcnUI i funkcje internacjonalizacji, zaprojektowany do szybkiego budowania wydajnych, dostosowywalnych i wielojęzycznych projektów front-end.",
+    "h1Text": "Sprawdź swoją stronę docelową przed wysyłką"
+  },
+  "ChecklistPage": {
+    "title": "Lista kontrolna SEO na stronie",
+    "description": "Kompleksowa lista kontrolna do optymalizacji twoich stron internetowych pod kątem wyszukiwarek. Obejmuje treść, metatagi, linki, obrazy i zaawansowane techniki SEO.",
+    "h1Text": "Lista kontrolna SEO na stronie"
+  },
+  "Faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      {
+        "question": "Czym jest Sprawdzacz Stron Docelowych?",
+        "answer": "Sprawdzacz Stron Docelowych to narzędzie, które ocenia twoją stronę docelową na podstawie przewodnika po optymalizacji SEO na stronie Ahrefs, dostarczając wynik i sugestie dotyczące poprawy."
+      },
+      {
+        "question": "Jak działa Sprawdzacz Stron Docelowych?",
+        "answer": "Analizuje różne elementy SEO na stronie twojej strony docelowej, w tym tagi tytułów, opisy metatagów, strukturę URL, treść i inne, porównując je z najlepszymi praktykami."
+      },
+      {
+        "question": "Jakie czynniki są brane pod uwagę w wyniku strony docelowej?",
+        "answer": "Wynik uwzględnia czynniki takie jak umiejscowienie słów kluczowych, struktura nagłówków, metatagi, optymalizacja URL, linkowanie wewnętrzne i zewnętrzne, optymalizacja obrazów, kompletność treści oraz szybkość ładowania strony."
+      },
+      {
+        "question": "Jak mogę poprawić mój wynik strony docelowej?",
+        "answer": "Postępuj zgodnie z zaleceniami podanymi po analizie, które mogą obejmować optymalizację tagu tytułu, poprawę opisów metatagów, restrukturyzację treści lub zwiększenie szybkości ładowania strony."
+      },
+      {
+        "question": "Czy to narzędzie jest odpowiednie dla wszystkich typów stron internetowych?",
+        "answer": "Chociaż narzędzie opiera się na ogólnych najlepszych praktykach SEO na stronie, jest szczególnie przydatne dla stron docelowych. Niemniej jednak zasady te można zastosować do większości stron internetowych."
+      },
+      {
+        "question": "Jak często powinienem sprawdzać wynik mojej strony docelowej?",
+        "answer": "Zaleca się sprawdzanie wyniku po wprowadzeniu istotnych zmian na stronie docelowej lub przynajmniej co kwartał, aby upewnić się, że strona pozostaje zoptymalizowana w miarę ewolucji najlepszych praktyk SEO."
+      },
+      {
+        "question": "Czy wysoki wynik gwarantuje lepsze pozycje w wyszukiwarkach?",
+        "answer": "Wysoki wynik wskazuje na dobrą optymalizację na stronie, co jest korzystne dla SEO. Niemniej jednak pozycje w wyszukiwarkach zależą od wielu czynników, w tym SEO poza stroną i konkurencji."
+      },
+      {
+        "question": "Czy mogę użyć tego narzędzia do sprawdzenia stron docelowych moich konkurentów?",
+        "answer": "Tak, możesz wprowadzić dowolny publicznie dostępny URL, aby przeanalizować i porównać swoją stronę docelową z stronami konkurencji."
+      }
+    ]
+  }
+}
