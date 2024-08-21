@@ -13,6 +13,7 @@ import { SiteFooter } from '@/components/site-footer'
 import { ThemeProvider } from '@/components/theme-provider'
 import { NextIntlClientProvider, useTranslations } from 'next-intl'
 import GoogleAnalytics from '@/components/google-analytics'
+import PlausibleAnalytics from '@/components/plausible'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -71,6 +72,7 @@ export default function RootLayout({
             <SiteFooter locale={locale} />
           </div>
           <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''} />
+          <PlausibleAnalytics domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || ''} scriptPath={process.env.NEXT_PUBLIC_PLAUSIBLE_SCRIPT_PATH || ''} />
           {/* <TailwindIndicator /> */}
         </ThemeProvider>
       </body>
