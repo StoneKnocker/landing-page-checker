@@ -105,13 +105,6 @@ function calculateKeywordScore(keyword: string): number {
   return Math.max(0, Math.min(score, 100)) // Ensure score is between 0 and 100
 }
 
-/**
- * 实现一个函数，输入一个网页的html代码, 输出一个分数（0-100）
- * 判断是否使用标题标签结构化页面
-   - 有且仅有一个<h1>标签 70分
-   - 使用<h2>标签表示主要观点 20分
-   - 使用<h3>及以下标签表示支持性内容 10分
- */
 function calculateStructureScore(): number {
   let score = 0
 
@@ -142,15 +135,6 @@ function calculateStructureScore(): number {
   return score
 }
 
-/**
- * 实现一个函数，输入一个网页的html代码, 输出一个分数（0-100）
- * 判断title是否符合引人注目
-   - 保持简短(70字符以内) 50分
-     - 如果没有 0分
-     - 如果少于50个 或 多与70个字符 40分
-   - 包含关键词 40分
-   - 适当时包含年份 10分
- */
 function calculateAttractiveTitleScore(keyword: string): number {
   let score = 0
   const title = document.querySelector('title')
@@ -194,17 +178,6 @@ function calculateAttractiveTitleScore(keyword: string): number {
   return Math.max(0, Math.min(score, 100)) // Ensure score is between 0 and 100
 }
 
-/**
- * 实现一个函数，输入一个网页的html代码, 输出一个分数（0-100）
- * 评估页面 description 的质量
-   - 保持简短(160字符以内) 50分
-      - 如果多于 170 个字符 40分
-      - 如果少于 100 个字符 40分
-      - 如果少于 50 个字符 30分
-      - 如果少于 10 个字符 20分
-      - 如果没有 0分
-   - 包含关键词 50分
- */
 function calculateDescriptionScore(keyword: string): number {
   let score = 0
   const metaDescription = document.querySelector('meta[name="description"]')
@@ -235,16 +208,6 @@ function calculateDescriptionScore(keyword: string): number {
   return Math.max(0, Math.min(score, 100)) // Ensure score is between 0 and 100
 }
 
-/**
- * 实现一个函数，输入一个网页的html代码, 输出一个分数（0-100）
- * 判断网页上的图片是否优化过
-   - 如果没有图片 0分
-   - 如果有图片 100分
-    - 根据<img>属性判断，如果压缩过 25分
-    - 添加描述性alt文本 30分
-    - 使用描述性文件名 20分
-    - 懒加载 10分
- */
 function calculateImageOptimizationScore(): number {
   const images = document.querySelectorAll('img')
   if (images.length === 0) {
@@ -283,13 +246,6 @@ function calculateImageOptimizationScore(): number {
   return Math.max(0, Math.min(score, 100)) // Ensure score is between 0 and 100
 }
 
-/**
- * 实现一个函数，输入一个网页的url, 输出一个分数（0-100）
- * 判断一个网页的指标:
- * - 页面加载时间是否很快 30分
- * - 是否使用https 30分
- * - 是否移动端适配 40分
- */
 async function calculateCWVScore(): Promise<number> {
   let score = 0
 
