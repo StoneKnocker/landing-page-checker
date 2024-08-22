@@ -13,8 +13,8 @@ export function SiteFooter({ locale }: SiteFooterProps) {
   const t = useTranslations('Navigation');
   return (
     <footer className="sticky top-0 z-40 w-full border-b bg-background mt-8">
-      <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center space-x-4">
+      <div className="container flex flex-col h-auto py-4 items-center justify-between">
+        <div className="flex items-center space-x-4 mb-4">
           <ThemeToggle />
           <nav className="flex flex-wrap items-center gap-4">
             {languageSupported.map((language) => (
@@ -28,7 +28,7 @@ export function SiteFooter({ locale }: SiteFooterProps) {
             ))}
           </nav>
         </div>
-        <nav className="flex items-center space-x-4">
+        <nav className="flex items-center space-x-4 mb-4">
           <Link
             href={`/privacy`}
             className="text-sm hover:underline transition-colors duration-200 ease-in-out"
@@ -41,6 +41,10 @@ export function SiteFooter({ locale }: SiteFooterProps) {
           >
             {t('terms')}
           </Link>
+        </nav>
+        <nav className="flex items-center space-x-4">
+          <a href="https://iuu.ai/" target="_blank" className="text-sm hover:underline transition-colors duration-200 ease-in-out">iuu AI</a>
+          <a href="https://dokeyai.com/" target="_blank" title="Dokey AI Tools Directory" className="text-sm hover:underline transition-colors duration-200 ease-in-out">DokeyAI</a>
         </nav>
       </div>
     </footer>
