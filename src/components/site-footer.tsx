@@ -43,8 +43,8 @@ export function SiteFooter({ locale }: SiteFooterProps) {
           </Link>
         </nav>
         <nav className="flex items-center space-x-4">
-          <a href="https://iuu.ai/" target="_blank" className="text-sm hover:underline transition-colors duration-200 ease-in-out">iuu AI</a>
-          <a href="https://dokeyai.com/" target="_blank" title="Dokey AI Tools Directory" className="text-sm hover:underline transition-colors duration-200 ease-in-out">DokeyAI</a>
+          <a href="https://aiwith.me" target="_blank" title="Discover thousands of AI Tools" className="text-sm hover:underline transition-colors duration-200 ease-in-out">AIWITH.ME</a>
+          <a href="https://tap4.ai/" target="_blank" title="Tap4 AI Tools Directory" className="text-sm hover:underline transition-colors duration-200 ease-in-out">Tap4 AI Tools Diresctory</a>
         </nav>
       </div>
     </footer>
