@@ -61,6 +61,9 @@ export async function generateMetadata({ params: { locale } }) {
   return {
     title: t('title'),
     description: t('description'),
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/checklist`,
+    },
   };
 }
 
