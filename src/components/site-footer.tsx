@@ -20,7 +20,7 @@ export function SiteFooter({ locale }: SiteFooterProps) {
             {languageSupported.map((language) => (
               <Link 
                 key={language.lang} 
-                href={language.lang === 'en' ? '' : `/${language.lang}`}
+                href={language.lang === 'en' ? '/' : `/${language.lang}`}
                 className="text-sm hover:underline transition-colors duration-200 ease-in-out"
               >
                 {language.language}
